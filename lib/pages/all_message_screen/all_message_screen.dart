@@ -166,12 +166,27 @@ class AllMessageScreen extends StatelessWidget {
                     height: 24.w,
                   ),
                 ),
-                Text(
-                  "Conversations",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 15.w,
-                  ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Conversations",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15.w,
+                      ),
+                    ),
+                    5.getH(),
+                    Container(
+                      width: 6.w,
+                      height: 6.h,
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
                 ),
                 IconButton(
                   onPressed: () {},
