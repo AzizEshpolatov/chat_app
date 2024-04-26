@@ -72,6 +72,7 @@ class AccountItem extends StatelessWidget {
                 2.getH(),
                 SizedBox(
                   width: 215.w,
+                  height: 17.h,
                   child: Text(
                     allMessages[contactModel.contactId-1].messageText,
                     style: TextStyle(

@@ -1,6 +1,8 @@
 import '../models/contact_model.dart';
 import '../models/message_model.dart';
 
+// List<MessageModel> sendMessage = [];
+
 List<MessageModel> allMessages = [
   MessageModel(
     createdTime: DateTime.now().toString(),
@@ -20,7 +22,8 @@ List<MessageModel> allMessages = [
   ),
   MessageModel(
     createdTime: DateTime.now().toString(),
-    messageText: "File yubordim",
+    messageText:
+        "https://images.pexels.com/photos/70912/pexels-photo-70912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     messageId: 3,
     isFile: true,
     contactId: 3,
@@ -28,7 +31,7 @@ List<MessageModel> allMessages = [
   ),
   MessageModel(
     createdTime: DateTime.now().toString(),
-    messageText: "File yubordim",
+    messageText: "https://images.pexels.com/photos/10889194/pexels-photo-10889194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     messageId: 4,
     isFile: true,
     contactId: 4,

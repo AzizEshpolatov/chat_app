@@ -1,9 +1,9 @@
 import 'package:chat_app/pages/all_message_screen/widgets/acount_item.dart';
 import 'package:chat_app/pages/all_message_screen/widgets/item.dart';
+import 'package:chat_app/pages/single_messaga_screen/single_message_screen.dart';
 import 'package:chat_app/utils/app_colors.dart';
 import 'package:chat_app/utils/app_img.dart';
 import 'package:chat_app/utils/app_size.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:zoom_tap_animation/zoom_tap_animation.dart';
@@ -140,8 +140,23 @@ class AllMessageScreen extends StatelessWidget {
                       children: [
                         ...List.generate(
                           allContacts.length,
-                          (index) =>
-                              AccountItem(contactModel: allContacts[index]),
+                          (index) => GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return SingleMessageScreen(
+                                      contactModel: allContacts[index],
+                                    );
+                                  },
+                                ),
+                              );
+                            },
+                            child: AccountItem(
+                              contactModel: allContacts[index],
+                            ),
+                          ),
                         ),
                       ],
                     ),

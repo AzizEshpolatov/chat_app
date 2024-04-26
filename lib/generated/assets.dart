@@ -4,9 +4,12 @@ class Assets {
 
   static const String iconsAdd = 'assets/icons/add.svg';
   static const String iconsCorrect = 'assets/icons/correct.svg';
+  static const String iconsM = 'assets/icons/m.svg';
   static const String iconsMenu = 'assets/icons/menu.svg';
   static const String iconsMessage = 'assets/icons/message.svg';
+  static const String iconsMore = 'assets/icons/more.svg';
   static const String iconsPersons = 'assets/icons/persons.svg';
   static const String iconsSearch = 'assets/icons/search.svg';
+  static const String iconsSend = 'assets/icons/send.svg';
 
 }
